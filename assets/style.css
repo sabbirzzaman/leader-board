@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+:root {
+    --body-color: #F3F1FF;
+    --logo-color: #FFFFFF;
+    --heading-color: #562EFF;
+    --text-color: #1E1E1E;
+    --small-text-color: #FF4A60;
+}
+
+/* -------------
+    Base CSS
+-------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--body-color);
+}
+
+p,
+a {
+    margin: 0;
+    font-size: 16px;
+}
+
+span {
+    color: var(--heading-color);
+}
+
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+h2 {
+    color: var(--heading-color);
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 34px;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+hr {
+    color: #D1D1D1;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 870px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -------------
+    Header Area
+-------------- */
+.header {
+    background-color: var(--heading-color);
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--logo-color);
+    cursor: pointer;
+}
+
+.logo img {
+    width: 40.42px;
+    height: 51px;
+    cursor: pointer;
+}
+
+.logo span {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--logo-color);
+}
+
+.profile img {
+    cursor: pointer;
+}
+
+/* -------------
+    Top Player
+-------------- */
+.player-blog {
+    background-color: var(--logo-color);
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 35px;
+}
+
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+/* Blog Area */
+.articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+    padding: 10px 0;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+article img {
+    width: 177px;
+    height: 117px;
+}
+
+/* Course Area */
+.course-card {
+    background-color: var(--logo-color);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 10px 0;
+}
+
+.course-item {
+    padding: 15px;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+}
+
+.course-info img {
+    width: 224.38px;
+    height: 105.51px;
+    margin-bottom: 10px;
+}
+
+.author {
+    color: var(--small-text-color);
+    margin-bottom: 15px;
+}
+
+.filled {
+    color: #FFC014;
+}
+
+.empty {
+    color: rgba(174, 174, 174, 0.15);
+}
+
+.course-feedback {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-dureation {
+    background-color: #FFE4E8;
+    border-radius: 15px;
+    padding: 6px;
+}
+
+.fa-clock {
+    color: var(--small-text-color);
+}
+
+.cls-duration {
+    color: var(--small-text-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--text-color);
+    padding: 30px 0;
+}
+
+.copy-right {
+    text-align: center;
+    color: var(--logo-color);
+}
