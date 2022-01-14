@@ -295,19 +295,79 @@ article img {
         font-size: 13px;
     }
 
-    i,.cls-duration {
+    i,
+    .cls-duration {
         font-size: 12px
     }
 }
 
 /* Mobile Version CSS */
 @media only screen and (max-width: 688px) {
+
+    /* Mobile navigation */
+    .mobile-nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        background: var(--logo-color);
+        padding: 0;
+        margin: 0;
+        width: calc(100vw - 40%);
+        height: 100vh;
+    }
+
+    .mobile-nav ul {
+        transform: translate(-100%);
+        transition: transform .5s ease;
+    }
+
+    .mobile-nav input:checked ~ ul {
+        transform: translate(0%);
+    }
+
+
+    .mobile-nav ul li a {
+        color: var(--text-color);
+        font-size: 16px;
+        display: block;
+        margin-left: 20px
+    }
+
+    .mobile-nav ul li:first-child {
+        margin-top: 70px
+    }
+
+    .mobile-nav input {
+        display: flex;
+        position: absolute;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+        height: 20px;
+        margin: 0;
+        width: 20px;
+    }
+
+    .mobile-nav i {
+        position: relative;
+    }
+
+    /* Hide content from mobile */
     .hide-for-mobile {
         display: none;
     }
 
+    /* Hide content from Desktop */
     .hide-for-desktop {
         display: block;
+    }
+
+    /* Start Mobile Responsive CSS */
+    .navigation {
+        gap: 15px;
     }
 
     .fa-bars {
@@ -326,6 +386,7 @@ article img {
     .container {
         max-width: 330px;
     }
+
     .players {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -339,7 +400,6 @@ article img {
     }
 
     .courses {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
         padding: 7px 0;
